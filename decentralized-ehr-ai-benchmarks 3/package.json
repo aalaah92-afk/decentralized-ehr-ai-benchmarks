@@ -1,0 +1,30 @@
+{
+  "name": "decentralized-ehr-ai-benchmarks",
+  "version": "1.0.0",
+  "description": "Reference implementation, tests and security-analysis artefacts for the patient-centric blockchain/IPFS EHR framework with auditable AI inference (MDPI Computers manuscript).",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:gas": "REPORT_GAS=1 hardhat test",
+    "bench:gas": "hardhat run scripts/benchmark-gas.js",
+    "bench:throughput": "hardhat run scripts/benchmark-throughput.js",
+    "bench:crypto": "node scripts/benchmark-crypto.js",
+    "bench:ipfs": "node scripts/benchmark-ipfs.js",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "bench:e2e": "hardhat run scripts/e2e-latency.js",
+    "security:slither": "bash security/run_slither.sh",
+    "security:mythril": "bash security/run_mythril.sh",
+    "test:foundry": "forge test -vv",
+    "all": "bash run_all.sh"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "5.0.0",
+    "@openzeppelin/contracts": "5.0.2",
+    "hardhat": "2.22.17"
+  }
+}

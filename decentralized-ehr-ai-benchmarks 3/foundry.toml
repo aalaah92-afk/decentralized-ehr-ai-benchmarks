@@ -1,0 +1,22 @@
+[profile.default]
+src = "contracts"
+test = "test/foundry"
+out = "out-forge"
+libs = ["node_modules", "lib"]
+solc_version = "0.8.20"
+evm_version = "shanghai"
+optimizer = true
+optimizer_runs = 200
+remappings = [
+  "@openzeppelin/=node_modules/@openzeppelin/",
+  "forge-std/=lib/forge-std/src/",
+]
+
+[fuzz]
+runs = 100000        # 10^5 fuzz cases per property test (manuscript Section 4.1.1)
+seed = "0x2026"
+
+[invariant]
+runs = 1000          # 1,000 random call sequences ...
+depth = 100          # ... of 100 calls each = 10^5 handler calls per invariant
+fail_on_revert = false

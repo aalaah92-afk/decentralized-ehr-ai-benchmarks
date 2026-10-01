@@ -1,0 +1,5 @@
+policy,adversary,precision,recall,anonymity_set,residual_entropy_bits
+static,A1 address clustering,1.0,1.0,1,0.0
+static,A2 address + patient/24h heuristic,0.14021172234446888,1.0,,
+stealth,A1 address clustering,nan,0.0,20,3.497876416067178
+stealth,A2 address + patient/24h heuristic,0.14078374455732948,0.0004982034998653195,,

@@ -1,0 +1,11 @@
+SYNTHETIC SELF-TEST (not study results)
+val images=1315, test images=3968, test patients=900
+macro AUROC=0.8155, macro AUPRC=0.3475 (mean of class values 0.3475)
+macro ECE=0.0083, pooled ECE=0.0023, Brier=0.0636, NLL=0.2204
+
+[PASS] macro AUPRC == mean(class AUPRC)
+[PASS] per-class AUROC/AUPRC match sklearn
+[PASS] all class CIs contain point estimates
+[PASS] rare-class redraw logic exercised on 60-patient subset (Hernia positives=2, redraws=11, kept=50)
+[PASS] calibrated synthetic model: pooled ECE 0.0023 < 0.02
+[PASS] 14 thresholds selected on validation

@@ -1,0 +1,32 @@
+✔ AES-256-GCM round trip, 12-byte IV, 16-byte tag, bundle = C||IV||T (10.703184ms)
+✔ tampering with C, IV or T is rejected by GCM and changes H_C (0.963413ms)
+✔ fresh key and fresh IV per encryption (100,000 IVs, no collision) (340.376583ms)
+✔ ECIES wrap: 93-byte output, unwrap by recipient, AAD binds record/version/address (9.782074ms)
+✔ ephemeral key differs per wrap (no deterministic wrapping) (2.699836ms)
+✔ salted AI inference commitment: opens, and hides equal vectors (2.374613ms)
+✔ CIDv1 raw known-answer (empty block) (0.163468ms)
+✔ keccak256 known-answer vectors (3.358749ms)
+✔ secp256k1: private key 1 -> 0x7E5F4552091A69125d5DfCb7b8C2659029395Bdf (EIP-55) (3.079668ms)
+✔ secp256k1 scalar multiplication matches OpenSSL on 50 random keys (594.361896ms)
+    guardians: primary healthcare provider, identity authority, family delegate, institutional escrow service, backup vault; 10/10 triples, 5/5 quadruples, 1/1 full set reconstructed
+    secret=0x00: chi2(share1)=238.7, chi2(share2)=248.7, chi2(share1 xor 7*share2)=263.4 (df=255, critical 330.5 at alpha=0.001)
+    secret=0xff: chi2(share1)=223.2, chi2(share2)=270.8, chi2(share1 xor 7*share2)=268.0 (df=255, critical 330.5 at alpha=0.001)
+✔ GF(2^8) field axioms: a*inv(a) = 1 for all non-zero a (0.649143ms)
+✔ all C(5,3)=10 guardian triples reconstruct the patient key; 4 and 5 shares also work (122.437987ms)
+✔ any 2 shares reveal nothing: joint share distribution is independent of the secret (chi-square) (427.444382ms)
+✔ a modified guardian share is rejected by its commitment; without commitments the address check catches it (22.264782ms)
+✔ recovered key restores access: unwraps a record key previously wrapped for the patient (13.336691ms)
+✔ duplicate share indices are refused (0.262571ms)
+✔ clinician recognises its announcement and derives the stealth private key (78.966286ms)
+✔ another clinician cannot recognise or use the announcement (8589.116374ms)
+✔ view key alone cannot spend: wrong spend key gives a different address (67.228795ms)
+✔ record key wrapped for the stealth public key is unwrapped with the derived key (71.844777ms)
+✔ 1,000 grants to the same clinician produce 1,000 distinct recipient addresses (30780.96186ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 41409.236528

@@ -1,0 +1,19 @@
+Produced in: Claude cloud sandbox (Anthropic), 2026-09-27T16:27:16Z
+os: Linux 6.18.44-fc-v42 x86_64
+cpu: Intel(R) Xeon(R) Processor @ 2.10GHz x2
+node: v22.22.2  python: 3.11.15  numpy: 2.4.4  sklearn: 1.8.0
+8ef18b80d28437cabf8b412d45ac3e93a20e7a8c85584c0a8ee2cdb0550a9cfd  lib/ehrCrypto.js
+63ff173b8ec08f1656b78563cf6145efb39cfc28ef2a7d5bf1da8364034a4ed2  lib/ipfsStore.js
+ae43f3ecdbcd97826a2819e37bca349f62917a6e6e6efb7da74650816b8da2a7  lib/keccak.js
+24afd66cda845e9b47dd25256cb4d015dd01755173161ae14351c4aeff5fcd01  lib/secp256k1.js
+58fe61f9ef9499a1e5d2afb29fd28669c5e1ec177b834e596b4efac3bd7e9288  lib/shamir.js
+8f41ff45779fec9cd83c76d6649ce5858978a3f63c967c7db9748bf8f1fbbe36  lib/stealth.js
+8cdc54020f6346c7cf0762317adfe245c080526435e7f03a7a1792c60fb3bb14  simulations/ipfs_availability.py
+2805ea4ecc0fa9f9ea4bbb3ca0f89758964eb2f249b58d65b2a0e30532334bd2  simulations/linkability.py
+dd1d104f257341b95402d8bf5a5031d7e1377220171349ebe87107f528b48d9b  ai/chexpert_eval.py
+aae495ef0cf027f5970ac7ddbc47a161a33a7b00c2454af0c6834aa4c40a2a2f  ai/common.py
+0d857c5f5790ebc071e1cf9a8762393e839f02271de8a7703a331b83094027d3  ai/evaluate.py
+7c2dc54ef65bf02bd0a7fbca5241b43d43f349844aa4d204cb6eb1c98fc94e19  ai/predict.py
+0b03083e69a34c6ede7988b6dea418e23abf5d96b0f5162ef7714754bfcedeed  ai/split_patients.py
+dc4de3f659c4d89ce1227043754f380f358880e68f8b09211e33b8709bd7b67e  ai/synthetic_selftest.py
+08fe057ab87843dedf53c3c850e3c06acf1480ffd8018f9aa67edf19d1e01c1d  ai/train.py
